@@ -1,0 +1,21 @@
+name: Testing using Context Variables
+
+on:
+  workflow_dispatch:
+
+env:
+  name: Lokesh
+
+jobs:
+  Gretting:
+    runs-on: ubuntu-latest
+    env:  
+      design : DevOps
+    steps:
+      - name: Checkout
+        uses: /actions/checkout@v3
+      - name: Context Variables
+        run: |
+          echo "github url : ${{github.repository}}
+          echo "github action: ${{github.action}}
+          
