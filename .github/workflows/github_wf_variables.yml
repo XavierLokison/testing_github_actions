@@ -1,6 +1,6 @@
 name: Testing Variables in Github workflows
 on :
-  worflow_dispatch:
+  workflow_dispatch:
 #globally declaring variables
 env:
   NAME: Lokesh
